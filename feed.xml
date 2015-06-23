@@ -14,7 +14,7 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}{% if post.source_url %}^{% endif %}</title>
         <description>{% capture desc %}{{ post.content }}{% if post.source_url %}
-<p><a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">&nbsp;⋎&nbsp;</a></p>{% endif %}<img src="https://ga-beacon.appspot.com/UA-64334089-2/feed/{{ post.id | replace:'/','-' | remove_first:'-' }}?pixel" />{% endcapture %}{{ desc | xml_escape }}</description>
+<p><a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">&nbsp;⋎&nbsp;</a></p>{% endif %}<img src="https://ga-beacon.appspot.com/UA-64334089-2/feed{{ post.url | remove:'.html' }}?pixel" />{% endcapture %}{{ desc | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{% if post.source_url %}{{ post.source_url }}{% else %}{{ post.url | prepend: site.baseurl | prepend: site.url }}{% endif %}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
