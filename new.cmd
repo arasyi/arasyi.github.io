@@ -1,2 +1,2 @@
 @echo off
-thor jekyll:new %*
+php new.php %*
