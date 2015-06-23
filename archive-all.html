@@ -1,0 +1,48 @@
+---
+title: "All Archive"
+---
+<div class="archive">
+{% capture cache %}
+
+{% assign year = "" %}
+{% assign month = "" %}
+
+{% for post in site.posts %}
+
+{% assign post_year = post.date | date: "%Y" %}
+{% assign post_month = post.date | date: "%B" %}
+
+{% unless year == post_year %}
+{% assign year = post_year %}
+{% assign month = "" %}
+<h3 id="{{ year }}">{{ year }}</h3>
+{% endunless %}
+
+{% unless month == post_month %}
+{% assign month = post_month %}
+<h4 id="{{ month }}{{ year }}">{{ month }}</h4>
+{% endunless %}
+
+<p>
+<a href="{{ post.url }}">{{ post.title }}</a>
+
+{% if post.source_url %}
+ <a href="{{ post.source_url }}"><sup><i class="ion-android-open"></i></sup></a>
+{% endif %}
+</p>
+
+{% endfor %}
+
+{% endcapture %}{{ cache | strip_newlines }}{% assign cache = nil %}
+</div>
+<div id="post-css">
+.archive p {
+  margin-bottom: 0.5rem;
+}
+.archive h3 {
+  margin: 2rem 0;
+}
+.archive h4 {
+  margin: 1.5rem 0 1rem;
+}
+</div>

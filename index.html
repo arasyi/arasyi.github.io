@@ -1,0 +1,12 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ site.title }}</title> 
+{% for post in site.posts limit:1 %}<meta http-equiv="refresh" content="0;URL='{{ post.url | prepend: site.baseurl | prepend: site.url }}'" />{% endfor %}
+</head>
+<body>
+</body>
+</html>

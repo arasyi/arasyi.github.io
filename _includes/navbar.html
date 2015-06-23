@@ -1,0 +1,43 @@
+{% capture prev_next %}
+
+{% if page.previous %}
+<a class="btn-prev" href="{{ page.previous.url | prepend: site.baseurl }}"><i class="ion-android-arrow-back"></i></a>
+{% elsif custom_prev %}
+<a class="btn-prev" href="{{ custom_prev | prepend: site.baseurl }}"><i class="ion-android-arrow-back"></i></a>
+{% endif %}
+
+{% if page.next %}
+<a class="btn-next" href="{{ page.next.url | prepend: site.baseurl }}"><i class="ion-android-arrow-forward"></i></a>
+{% elsif custom_next %}
+<a class="btn-next" href="{{ custom_next | prepend: site.baseurl }}"><i class="ion-android-arrow-forward"></i></a>
+{% endif %}
+
+{% endcapture %}
+<nav class="navbar">
+  <div class="nav">
+    <div class="left">
+      <a class="btn-menu"><i class="ion-android-menu"></i></a>
+    </div>
+    <a class="btn-home" href="{{ site.baseurl }}/"><i class="ion-android-home"></i></a>
+    <a class="btn-search"><i class="ion-android-search"></i></a>
+    <a class="btn-berbagi"><i class="ion-android-share-alt"></i></a>
+    {{ prev_next | strip_newlines }}{% assign prev_next = nil %}
+  </div>
+  <div class="nav mini">
+    <div class="right">
+      <a class="btn-more"><i class="ion-ios-more"></i></a>
+    </div>
+  </div>
+</nav>
+{% assign permalink = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+<div class="popover top popup-berbagi">
+  <div class="arrow" style="left: 50%;"></div>
+  <div class="popover-content">
+    <a title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(window.location.href)); return false;">
+      <i class="ion-social-twitter"></i>
+    </a>
+    <a title="Post on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;">
+      <i class="ion-social-facebook"></i>
+    </a>
+  </div>
+</div>

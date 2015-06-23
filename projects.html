@@ -1,0 +1,8 @@
+---
+title: "Projects"
+---
+
+{% for post in site.categories.projects %}
+<h4><a href="{{ post.source_url }}">{{ post.project_title }}</a></h4>
+<p>{{ post.project_desc }}</p>
+{% endfor %}

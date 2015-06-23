@@ -1,0 +1,60 @@
+---
+title: "Contact"
+---
+
+<p>I encourage you to use the comment form if you have any question regarding articles posted on this blog. 
+For any other question, please use the contact form below.</p>
+
+<iframe name="iframe_txlbrchf" id="iframe_txlbrchf" style="display:none;"></iframe>
+<form id="contact-form" action="https://docs.google.com/forms/d/178aW_QpidSDSl0whiIa_9T80PTsvhojkYAlPvIyinQQ/formResponse" method="POST"  target="iframe_txlbrchf" onsubmit="sent_txlbrchf=true">
+  <div class="row">
+    <div class="six columns">
+      <label for="contact-name">Your name *</label>
+      <input type="text" class="u-full-width" id="contact-name" name="entry.547353726" placeholder="Enter your name">
+      <label for="contact-email">Your email address *</label>
+      <input type="email" class="u-full-width" id="contact-email" name="entry.1020515505" placeholder="Enter your email address">
+    </div>
+  </div>
+  <div class="row">
+    <div class="nine columns">
+      <label for="contact-message">Your message *</label>
+      <textarea class="u-full-width" id="contact-message" name="entry.1741001682" rows="4" placeholder="Enter your message"></textarea>
+    </div>
+  </div>
+  <input type="hidden" name="draftResponse" value="[,,&quot;-6403155082130508949&quot;]">
+  <input type="hidden" name="pageHistory" value="0">
+  <input type="hidden" name="fbzx" value="-6403155082130508949">
+  <input type="submit" name="submit" value="Submit" id="contact-submit" class="button-primary">
+</form>
+
+<script>
+window.allSet = function () {
+	function IsEmail(email) {
+		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		return regex.test(email);
+	}
+	$('#contact-form').submit(function () {
+		if ($('#contact-name').val().trim() == '') {
+			alert('Please enter your name');
+			return false;
+		}
+		if ($('#contact-email').val().trim() == '') {
+			alert('Please enter your email address');
+			return false;
+		}
+		if (!IsEmail($('#contact-email').val())) {
+			alert('Please enter a valid email address');
+			return false;
+		}
+		if ($('#contact-message').val().trim() == '') {
+			alert('Please enter your message');
+			return false;
+		}
+	});
+	$('#iframe_txlbrchf').load(function () {
+		if (typeof sent_txlbrchf != 'undefined') {
+			$('#content').html('<p>Your message has been sent.</p>');
+		}
+	});
+}
+</script>
