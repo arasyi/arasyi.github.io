@@ -27,8 +27,8 @@ redcarpet:
   ]
 kramdown:
   input: GFM
-
-highlighter: null
+  
+permalink: /:year/:month/:day/:title.html
 
 defaults:
   -
@@ -38,19 +38,12 @@ defaults:
     values:
       layout: "post"
       comment: true
-      permalink: /:year/:month/:day/:title.html
   -
     scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-  -
-    scope:
-      path: "projects"
-      type: "posts"
-    values:
-      permalink: /projects/:title.html
 
 # Exclude these files from your production _site
 exclude:
