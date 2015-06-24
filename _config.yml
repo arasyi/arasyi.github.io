@@ -19,7 +19,6 @@ redcarpet:
     no_intra_emphasis,
     autolink,
     strikethrough,
-    superscript,
     with_toc_data,
     lax_spacing,
     highlight
