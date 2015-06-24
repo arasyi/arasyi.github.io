@@ -1,5 +1,5 @@
 ---
-title: "All Archive"
+title: "Bookmarks"
 ---
 <div class="archive">
 {% capture cache %}
@@ -8,6 +8,8 @@ title: "All Archive"
 {% assign month = "" %}
 
 {% for post in site.posts %}
+
+{% if post.source_url %}
 
 {% assign post_year = post.date | date: "%Y" %}
 {% assign post_month = post.date | date: "%B" %}
@@ -24,12 +26,10 @@ title: "All Archive"
 {% endunless %}
 
 <p>
-<a href="{{ post.url }}">{{ post.title }}</a>
-
-{% if post.source_url %}
- <a href="{{ post.source_url }}"><sup><i class="ion-android-open"></i></sup></a>
-{% endif %}
+<a href="{{ post.url }}">{{ post.title }}</a> <a href="{{ post.source_url }}"><sup><i class="ion-android-open"></i></sup></a>
 </p>
+
+{% endif %}
 
 {% endfor %}
 
