@@ -1,7 +1,7 @@
 ---
 title: "The Move to Github Pages"
 source_url: 
-date: 2015-06-24 12:36:52
+date: 2015-06-24 12:36:52 +0700
 tags:
  - etc
 ---

@@ -3,7 +3,7 @@ title: "Sunset at Pantai Remen (Remen Beach)"
 source_url: 
 tags:
  - slice of life
-date: 2015-04-28 10:10:18
+date: 2015-04-28 10:10:18 +0700
 ---
 
 Last Sunday I visited Pantai Remen (Tuban)[^1] with my friends.  

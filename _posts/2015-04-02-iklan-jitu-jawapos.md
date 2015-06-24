@@ -3,7 +3,7 @@ title: "Iklan Jitu Jawapos"
 source_url: 
 tags:
  - slice of life
-date: 2015-04-02 09:59:59
+date: 2015-04-02 09:59:59 +0700
 ---
 
 Iklan Jawapos di JTV:

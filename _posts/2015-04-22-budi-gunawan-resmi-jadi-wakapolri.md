@@ -4,7 +4,7 @@ source_url: http://nasional.kompas.com/read/2015/04/22/12184631/Kapolri.Pastikan
 tags:
  - linked
  - indonesia
-date: 2015-04-22 10:07:00
+date: 2015-04-22 10:07:00 +0700
 ---
 
 1. [BG dicalonkan jadi kapolri][1]

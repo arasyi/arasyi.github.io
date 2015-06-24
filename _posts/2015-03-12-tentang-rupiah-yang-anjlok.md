@@ -4,7 +4,7 @@ source_url: http://www.tribunnews.com/bisnis/2015/03/12/rupiah-anjlok-jokowi-gub
 tags:
  - linked
  - indonesia
-date: 2015-03-12 09:56:38
+date: 2015-03-12 09:56:38 +0700
 ---
 
 Rupiah melemah dan berpotensi menyentuh level Rp 15.000/USD.

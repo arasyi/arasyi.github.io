@@ -3,7 +3,7 @@ title: "Jokowi Mantu"
 source_url: 
 tags:
  - slice of life
-date: 2015-04-14 10:04:47
+date: 2015-04-14 10:04:47 +0700
 ---
 
 Trending Topic Metro TV (14/4/2015):

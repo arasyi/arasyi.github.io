@@ -40,7 +40,7 @@ $isi = "---\n";
 $isi .= "title: \"{$judul}\"\n";
 
 if ($cat != 'page') {
-  $isi .= "date: " . date('Y-m-d H:i:s') . "\n";
+  $isi .= "date: " . date('Y-m-d H:i:s O') . "\n";
   $isi .= "source_url: \n";
   
   if ($cat == 'projects') {
