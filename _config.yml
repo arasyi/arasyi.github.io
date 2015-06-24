@@ -45,6 +45,7 @@ defaults:
 
 gems:
  - jekyll-sitemap
+ - jekyll-redirect-from
 
 # Exclude these files from your production _site
 exclude:
