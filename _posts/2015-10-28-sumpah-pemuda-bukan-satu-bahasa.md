@@ -25,16 +25,16 @@ Bayangkan seandainya sumpah pemuda yang ketiga itu seperti yang sering disalahka
 
 Mungkin ini juga salah satu sebab dari lirik lagu **Satu Nusa Satu Bangsa**:
 
-> Satu nusa<br>
-> Satu bangsa<br>
+> Satu nusa  
+> Satu bangsa  
 > ***Satu bahasa kita***
 > 
-> Tanah air<br>
-> Pasti jaya<br>
+> Tanah air  
+> Pasti jaya  
 > Untuk Selama-lamanya
 > 
-> Indonesia pusaka<br>
-> Indonesia tercinta<br>
-> Nusa bangsa<br>
-> Dan Bahasa<br>
+> Indonesia pusaka  
+> Indonesia tercinta  
+> Nusa bangsa  
+> Dan Bahasa  
 > Kita bela bersama
